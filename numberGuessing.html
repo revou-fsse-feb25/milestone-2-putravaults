@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./numberGuessing.css">
+    <script src="./numberGuessing.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="./index.html" class="home-button">Back to Home</a>
+    <h1>Guess The Number From 1-100</h1>
+    <div class="game-container">
+        <input type="number" id="inputField" placeholder="Enter your guess (1-100)" min="1" max="100" />
+        <div class="button-container">
+            <button id="checkAnswer">Check Result</button>
+            <button onclick="window.location.reload()">Restart</button>
+        </div>
+        <h2 id="result">Let's Play!</h2>
+        <h3 id="hint">Enter a number to start</h3>
+        <p id="attempts">Attempts left: 5</p>
+    </div>
+</body>
+</html>

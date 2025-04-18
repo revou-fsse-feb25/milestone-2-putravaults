@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="./rockPapperScissor.css">
+    <script src="./rockPapperScissor.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="./index.html" class="home-button">Back to Home</a>
+    <h1>Rock Paper Scissor Game</h1>
+    <div class="score-container">
+      <div class="score-box">
+        <span>Player Score:</span>
+        <span id="playerScore">0</span>
+      </div>
+      <div class="score-box">
+        <span>Computer Score:</span>
+        <span id="computerScore">0</span>
+      </div>
+    </div>
+    <h2 id="displayUserText">Choose your choice!</h2>
+    
+    <div class="game-container">
+      <div class="card" data-choice="rock">
+        <img src="./assets/fist.png" alt="Rock">
+        <span class="card-title">Rock</span>
+      </div>
+      <div class="card" data-choice="paper">
+        <img src="https://cdn-icons-png.flaticon.com/512/2541/2541988.png" alt="Paper">
+        <span class="card-title">Paper</span>
+      </div>
+      <div class="card" data-choice="scissor">
+        <img src="./assets/scissors.png" alt="Scissor">
+        <span class="card-title">Scissor</span>
+      </div>
+    </div>
+    <h2 id="displayComputerText"></h2>
+    <div class="computer-choice-container">
+      <div class="card">
+        <span class="card-title">?</span>
+      </div>
+    </div>
+    <button id="Start">Go</button>
+  </body>
+</html>
