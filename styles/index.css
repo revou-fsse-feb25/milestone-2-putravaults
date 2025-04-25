@@ -1,15 +1,20 @@
 body {
-    background: url(./assets/gameBackground.png);
+    background: url(../assets/gameBackground.png);
     background-size: cover;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(24, 28, 1, 0.886);
+    text-shadow: 0px 0px 10px rgba(150, 184, 247, 0.886);
 }
 
-body h1,h2 {
+h1 {
     font-size: 4rem;
     color: #fffffff0;
     font-family: "Pacifico", cursive;
+}
+
+h2 {
+    color: #fffffff0;
+    font-family: "Lilita One", sans-serif;
 }
 header h2 {
     margin-top: -2rem;
@@ -21,11 +26,12 @@ body div h2{
     color: rgb(236, 234, 233);
 }
 header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .selectGame {
     display: flex;
     justify-content: center;
@@ -33,7 +39,37 @@ header {
     flex-wrap: wrap;
     gap: 5%;
     height: 30vh;
-   
+    margin-top: 2rem;
+}
+
+.intro-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 70%;
+    text-align: center;
+}
+
+.intro-section p {
+    color: #ffffff;
+    font-family: "Lilita One", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-overview {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.game-overview h2 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 .selectGame a {
     text-decoration: none;
@@ -53,18 +89,24 @@ header {
 .selectGame div:hover {
     transform: scale(1.1);
 }
-#game1 {
-    background: url(./assets/game1.png);
+
+#game1, #game2, #game3 {
+    background: url(../assets/game1.png);
     background-size: cover;
     object-fit: cover;
 }
 #game2 {
-    background: url(./assets/game2.png);
+    background: url(../assets/game2.png);
     background-size: cover;
     object-fit: cover;
 }
 #game3 {
-    background: url(./assets/cardMatching.png);
+    background: url(../assets/cardMatching.png);
+    background-size: cover;
+    object-fit: cover;
+}
+#game4 {
+    background: url(../assets/game4.png);
     background-size: cover;
     object-fit: cover;
 }

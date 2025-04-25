@@ -1,15 +1,16 @@
 body {
     margin-top: 3vh;
-    background: url(./assets/gameBackground.png);
+    background: url(../assets/gameBackground.png);
     background-size: cover;
     object-fit: cover;
     color: #fffffff0;
-    font-family: "Pacifico", cursive;
+    font-family: "Lilita One", sans-serif;
 }
 
 body h1 {
+    font-family: "Pacifico", cursive;
     font-size: 3rem;
-    text-shadow: 0px 0px 10px rgba(24, 28, 1, 0.886);
+    text-shadow: 0px 0px 10px rgba(14, 98, 104, 0.886);
 }
 #displayComputerText{
     font-size: 1.5rem ;
@@ -18,11 +19,11 @@ body h1 {
 body h2 {
     margin-bottom: 3.5rem;
     font-size: 2rem ;
-    text-shadow: 0px 0px 10px rgba(24, 28, 1, 0.886);
-    color: #ebecddf0;
+    text-shadow: 0px 0px 15px rgba(20, 107, 113, 0.886);
 }
 
 .game-container {
+    font-family: "Lilita One", sans-serif;
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -39,15 +40,15 @@ body h2 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: rgba(243, 244, 171, 0.792);
-    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+    background-color: rgba(254, 254, 254, 0.792);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.578);
     transition: transform 0.2s;
 }
 
 .card:hover {
     transform: scale(1.05);
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.4);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
     border: 3px solid #3f73adab;
 }
 
@@ -61,16 +62,16 @@ body.game-finished .card:hover {
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
-    filter: sepia(30%);
 }
 
 .card-title {
-    font-size: 18px;
+    font-size: 1.6rem;
     font-weight: bold;
-    color: #042256;
+    color: #083d56;
+    text-shadow: 0px 2px 6px rgba(97, 157, 161, 0.664);
 }
 
 #displayText {
@@ -82,25 +83,26 @@ body.game-finished .card:hover {
 
 h1, h2 {
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.2);
+    text-shadow: 2px 2px 4px rgba(19, 139, 87, 0.2);
 }
 
 .card.selected {
     border-color: #f8e513;
     background-color: rgba(239, 238, 220, 0.945);
-    box-shadow: 0 8px 20px rgba(218, 200, 5, 0.584);
+    box-shadow: 0 8px 20px rgba(235, 220, 48, 0.584);
     transform: translateY(-10px);
 }
 
 #Start {
-    border: 3px solid #ffffff;
+    font-family: "Lilita One", sans-serif;
+    border: 2px solid #ffffff;
     display: block;
     margin: 20px auto;
     padding: 12px 30px;
-    font-size: 18px;
+    font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
-    background: linear-gradient(to bottom, #a8d8b2c5, #053360bf);
+    background: linear-gradient(to bottom, #30bcce84, #04707ebf);
     color: #fff8dc;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -139,7 +141,7 @@ h1, h2 {
 }
 
 .home-button {
-    font-family: "Pacifico", cursive;
+    font-family: "Lilita One", sans-serif;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -147,7 +149,7 @@ h1, h2 {
     color: #ffffff;
     font-size: 1.5rem;
     padding: 10px 15px;
-    background-color: rgba(10, 46, 130, 0.792);
+    background-color: rgba(38, 161, 196, 0.792);
     border-radius: 10px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -155,6 +157,6 @@ h1, h2 {
 
 .home-button:hover {
     transform: translateY(-2px);
-    background-color: rgba(7, 77, 127, 0.566);
-    box-shadow: 0 6px 12px rgba(155, 180, 12, 0.658);
+    background-color: rgba(54, 150, 228, 0.566);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.658);
 }

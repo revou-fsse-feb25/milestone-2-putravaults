@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <title>Putra's 2nd Milestone Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./index.css">
-    <script src="game.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 </head>
+<body>
     <header>
-        <h1>Welcome To RevoFun!</h1>
+        <h1>Welcome To <span id="logo">RevoFun!</span></h1>
         <h2>Play your favourite game!</h2>
     </header>
-<body>
-    <div class="selectGame">
-        <a href="./numberGuessing.html"><div id="game1"></div><h2>Number Guessing</h2></a>
-        <a href="./rockPaperScissor.html"><div id="game2"></div><h2>Rock, Papper, Scissor</h2></a>
-        <a href="./carMatching.html"><div id="game3"></div><h2>Car Matching</h2></a>
-        <a href="./game4.html"><div id="game4"></div><h2>Upcoming!</h2></a>   
-    </div>
+
+    <section class="intro-section">
+        <p>Welcome to RevoFun - Your Ultimate Gaming Destination! We're passionate about creating engaging and entertaining games that bring joy to players of all ages. Dive into our collection of exciting games and challenge yourself or compete with friends!</p>
+    </section>
+
+    <section class="game-overview">
+        <h2>Our Games Collection</h2>
+        <div class="selectGame">
+            <a href="./games/numberGuessing.html"><div id="game1"></div><h2>Number Guessing</h2></a>
+            <a href="./games/rockPaperScissor.html"><div id="game2"></div><h2>Rock, Papper, Scissor</h2></a>
+            <a href="./games/carMatching.html"><div id="game3"></div><h2>Car Matching</h2></a>
+            <a href="./games/game4.html"><div id="game4"></div><h2 class="game-title">Upcoming!</h2></a>   
+        </div>
+    </section>
 </body>
 </html>

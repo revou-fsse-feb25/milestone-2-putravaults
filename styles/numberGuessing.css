@@ -1,27 +1,28 @@
 body {
+    font-family: "Lilita One", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 80vh;
     margin: 0;
-    background: url(./assets/gameBackground.png);
+    background: url(../assets/gameBackground.png);
     background-size: cover;
     color: white;
     text-align: center;
 }
 
 h1 {
-    font-family: "Pacifico", cursive;
     font-size: 2.5rem;
     text-shadow: 0px 0px 10px rgba(24, 28, 1, 0.886);
     margin-bottom: 2rem;
 }
 
 #inputField {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 12px 20px;
-    font-size: 1.2rem;
+    font-family: "Lilita One", sans-serif;
+    text-align: center;
+    padding: 12px 30px;
+    font-size: 2rem;
     border: none;
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.9);
@@ -34,16 +35,16 @@ h1 {
 #inputField:focus {
     outline: none;
     transform: scale(1.02);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 8px rgba(47, 187, 203, 0.694);
 }
 
 button {
-    font-family: "Pacifico", cursive;
+    font-family: "Lilita One", sans-serif;
     padding: 12px 30px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border: none;
     border-radius: 25px;
-    background: #042051d2;
+    background: #0e6d78d2;
     color: white;
     cursor: pointer;
     margin: 0.5rem;
@@ -53,8 +54,8 @@ button {
 
 button:hover {
     transform: translateY(-2px);
-    background: #a80c62;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: #05476fb7;
+    box-shadow: 0 6px 8px rgba(253, 253, 253, 0.15);
 }
 
 button:active {
@@ -62,7 +63,8 @@ button:active {
 }
 
 #result, #hint, #attempts {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.658);
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 15px;
@@ -73,19 +75,15 @@ button:active {
 }
 
 #result {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffd700;
+    color: #ffffff;
 }
 
 #hint {
     font-size: 1.2rem;
-    color: #f8f9fa;
 }
 
 #attempts {
     font-size: 1.1rem;
-    color: #e9ecef;
 }
 
 @keyframes fadeIn {
@@ -98,7 +96,7 @@ button:active {
 }
 
 .home-button {
-    font-family: "Pacifico", cursive;
+    font-family: "Lilita One", sans-serif;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -106,7 +104,7 @@ button:active {
     color: #ffffff;
     font-size: 1.5rem;
     padding: 10px 15px;
-    background-color: rgba(10, 46, 130, 0.792);
+    background-color: rgba(38, 161, 196, 0.792);
     border-radius: 10px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -114,6 +112,6 @@ button:active {
 
 .home-button:hover {
     transform: translateY(-2px);
-    background-color: rgba(7, 77, 127, 0.566);
-    box-shadow: 0 6px 12px rgba(155, 180, 12, 0.658);
+    background-color: rgba(54, 150, 228, 0.566);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.658);
 }
