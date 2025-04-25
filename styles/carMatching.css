@@ -4,14 +4,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./assets/gameBackground.png);
+    background: url(../assets/gameBackground.png);
     background-size: cover;
     object-fit: cover;
-    font-family: 'Arial', sans-serif;
+    font-family: "Lilita One", sans-serif;
 }
 
 .game-container {
-    background: rgba(0, 0, 4, 0.374);
+    background: rgba(255, 255, 255, 0.37);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #ecf329;
+    color: #ffffff;
 }
 
 .game-board {
@@ -64,7 +64,7 @@ body {
 }
 
 .card-front {
-    background: linear-gradient(120deg, #eee57e, #0f5dd3f2);
+    background: linear-gradient(120deg, #69d4dc, #073077e2);
 }
 
 .card-back {
@@ -78,21 +78,25 @@ body {
     object-fit: contain;
 }
 
-#restart-btn {
+#restart-btn{
+    font-family: "Lilita One", sans-serif;
+    border: 2px solid #ffffff;
     display: block;
-    margin: 1rem auto;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    color: white;
-    background: #02a07970;
-    border: none;
-    border-radius: 5px;
+    margin: 20px auto;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s;
+    background: linear-gradient(to bottom, #30bcce84, #04707ebf);
+    color: #fff8dc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
 }
 
 #restart-btn:hover {
-    background: #cbf64c;
+    transform: translateY(-2px);
+    box-shadow: 0 0px 12px rgb(255, 255, 255);
 }
 
 @media (max-width: 600px) {
@@ -107,7 +111,7 @@ body {
 }
 
 .home-button {
-    font-family: "Pacifico", cursive;
+    font-family: "Lilita One", sans-serif;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -115,7 +119,7 @@ body {
     color: #ffffff;
     font-size: 1.5rem;
     padding: 10px 15px;
-    background-color: rgba(10, 46, 130, 0.792);
+    background-color: rgba(38, 161, 196, 0.792);
     border-radius: 10px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -123,6 +127,6 @@ body {
 
 .home-button:hover {
     transform: translateY(-2px);
-    background-color: rgba(7, 77, 127, 0.566);
-    box-shadow: 0 6px 12px rgba(155, 180, 12, 0.658);
+    background-color: rgba(54, 150, 228, 0.566);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.658);
 }
